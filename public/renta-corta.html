@@ -17,34 +17,34 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="FES, ir al inicio">
+      <a href="/" class="header__logo" aria-label="FES, ir al inicio">
         <picture>
-          <source srcset="assets/logo-fes.webp" type="image/webp" />
-          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" />
+          <source srcset="/assets/logo-fes.webp" type="image/webp" />
+          <img src="/assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" />
         </picture>
       </a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="nav" aria-label="Principal">
-        <a href="index.html">Inicio</a>
+        <a href="/">Inicio</a>
         <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Limpieza<span class="sr-only"> (abre la agenda en una pestaña nueva)</span></a>
-        <a href="renta-corta.html" aria-current="page">Renta corta</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="contacto.html" class="btn btn--primary btn--sm nav__cta">Cotizar</a>
+        <a href="/renta-corta" aria-current="page">Renta corta</a>
+        <a href="/nosotros">Nosotros</a>
+        <a href="/contacto">Contacto</a>
+        <a href="/contacto" class="btn btn--primary btn--sm nav__cta">Cotizar</a>
       </nav>
     </div>
   </header>
@@ -52,15 +52,15 @@
   <main id="contenido">
     <section class="banner">
       <picture>
-        <source type="image/webp" srcset="assets/img/depto-living-800.webp 800w, assets/img/depto-living-1600.webp 1600w" sizes="100vw" />
-        <img class="banner__img" src="assets/img/depto-living.jpg" alt="" width="1200" height="800" fetchpriority="high" />
+        <source type="image/webp" srcset="/assets/img/depto-living-800.webp 800w, /assets/img/depto-living-1600.webp 1600w" sizes="100vw" />
+        <img class="banner__img" src="/assets/img/depto-living.jpg" alt="" width="1200" height="800" fetchpriority="high" />
       </picture>
       <div class="container banner__content">
         <p class="kicker kicker--light">Administración de renta corta</p>
         <h1>Arriende su departamento por noche, sin ocuparse de la operación</h1>
         <p>Gestionamos su departamento en Airbnb y otras plataformas: desde el anuncio hasta la limpieza después de cada huésped. Usted recibe un informe mensual con los resultados.</p>
         <div class="btn-row">
-          <a href="contacto.html?servicio=renta-corta" class="btn btn--light">Solicitar evaluación</a>
+          <a href="/contacto?servicio=renta-corta" class="btn btn--light">Solicitar evaluación</a>
           <a href="#" data-link="whatsapp" data-wa-text="Hola FES, quiero información sobre la administración de mi departamento en renta corta." target="_blank" rel="noopener" class="btn btn--outline-light">Consultar por WhatsApp<span class="sr-only"> (pestaña nueva)</span></a>
         </div>
       </div>
@@ -110,8 +110,8 @@
     <section class="section section--alt" aria-labelledby="t-proceso">
       <div class="container split">
         <picture>
-          <source type="image/webp" srcset="assets/img/depto-plantas-800.webp 800w, assets/img/depto-plantas-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 540px" />
-          <img class="split__img" src="assets/img/depto-plantas.jpg" alt="Living de un departamento amoblado, luminoso y con plantas" width="1200" height="893" loading="lazy" />
+          <source type="image/webp" srcset="/assets/img/depto-plantas-800.webp 800w, /assets/img/depto-plantas-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 540px" />
+          <img class="split__img" src="/assets/img/depto-plantas.jpg" alt="Living de un departamento amoblado, luminoso y con plantas" width="1200" height="893" loading="lazy" />
         </picture>
         <div>
           <h2 id="t-proceso">Cómo empezamos</h2>
@@ -174,7 +174,7 @@
           <h2>¿Tiene un departamento en Concepción?</h2>
           <p>Cuéntenos de su propiedad y coordinamos una evaluación.</p>
         </div>
-        <a href="contacto.html?servicio=renta-corta" class="btn btn--light">Solicitar evaluación</a>
+        <a href="/contacto?servicio=renta-corta" class="btn btn--light">Solicitar evaluación</a>
       </div>
     </section>
   </main>
@@ -183,16 +183,16 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <picture>
-          <source srcset="assets/logo-fes.webp" type="image/webp" />
-          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" loading="lazy" />
+          <source srcset="/assets/logo-fes.webp" type="image/webp" />
+          <img src="/assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" loading="lazy" />
         </picture>
         <p>Limpieza profesional y administración de departamentos en renta corta.</p>
       </div>
       <nav aria-label="Servicios">
         <h2>Servicios</h2>
         <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
-        <a href="renta-corta.html">Renta corta</a>
-        <a href="contacto.html?servicio=empresa">Cotización para empresas</a>
+        <a href="/renta-corta">Renta corta</a>
+        <a href="/contacto?servicio=empresa">Cotización para empresas</a>
       </nav>
       <div>
         <h2>Contacto</h2>
@@ -205,7 +205,7 @@
     <div class="container footer__bottom">© <span data-year></span> FES SpA · First Ecology Solutions</div>
   </footer>
 
-  <script src="config.js"></script>
-  <script src="script.js"></script>
+  <script src="/config.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
