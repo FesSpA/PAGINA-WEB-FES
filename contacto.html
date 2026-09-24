@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · FES First Ecology Solutions</title>
+  <meta name="description" content="Contacte a FES First Ecology Solutions para limpieza profesional o administración de su departamento en renta corta." />
+  <link rel="icon" type="image/png" href="assets/logo-fes.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="FES inicio">
+        <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Limpieza</a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" class="is-active">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="kicker">Contacto</p>
+          <h1 class="page-title">Hablemos</h1>
+          <p class="body-lg">Escríbanos y le responderemos a la brevedad.</p>
+          <dl class="contact">
+            <dt>WhatsApp</dt><dd><a href="#" data-whatsapp-link>+56 9 0000 0000</a></dd>
+            <dt>Correo</dt><dd><a href="mailto:contacto@fes.cl">contacto@fes.cl</a></dd>
+            <dt>Instagram</dt><dd><a href="https://instagram.com/" target="_blank" rel="noopener">@fes</a></dd>
+          </dl>
+          <p class="note">¿Busca limpieza? <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Agende directamente aquí</a>.</p>
+        </div>
+        <form class="form" id="contactForm">
+          <label>Nombre<input type="text" name="nombre" required /></label>
+          <label>Teléfono<input type="tel" name="telefono" required /></label>
+          <label>Servicio
+            <select name="servicio">
+              <option>Administración de renta corta</option>
+              <option>Limpieza</option>
+              <option>Cotización para empresa</option>
+            </select>
+          </label>
+          <label>Mensaje<textarea name="mensaje" rows="4"></textarea></label>
+          <button type="submit" class="btn btn--primary">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span data-year></span> FES · First Ecology Solutions</span>
+      <div class="footer__links">
+        <a href="mailto:contacto@fes.cl">contacto@fes.cl</a>
+        <a href="#" data-whatsapp-link>WhatsApp</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
