@@ -3,115 +3,209 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Renta corta · FES First Ecology Solutions</title>
-  <meta name="description" content="Administramos su departamento en renta corta: publicación, huéspedes, limpieza, mantención y reportes mensuales." />
-  <link rel="icon" type="image/png" href="assets/logo-fes.png" />
+  <title>Administración de departamentos en renta corta | FES</title>
+  <meta name="description" content="FES administra su departamento en Airbnb y otras plataformas: anuncio, tarifas, huéspedes, limpieza, mantención e informe mensual. Solicite una evaluación." />
+  <link rel="canonical" href="https://fes-web.renatocarrasco2007.workers.dev/renta-corta" />
+  <meta name="theme-color" content="#123a26" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="FES · First Ecology Solutions" />
+  <meta property="og:title" content="Administración de departamentos en renta corta | FES" />
+  <meta property="og:description" content="Nos encargamos del anuncio, los huéspedes, la limpieza y la mantención de su departamento. Usted recibe un informe mensual." />
+  <meta property="og:url" content="https://fes-web.renatocarrasco2007.workers.dev/renta-corta" />
+  <meta property="og:image" content="https://fes-web.renatocarrasco2007.workers.dev/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="FES inicio">
-        <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" />
+      <a href="index.html" class="header__logo" aria-label="FES, ir al inicio">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" />
+        </picture>
       </a>
-      <nav class="nav" id="nav">
-        <a href="index.html">Inicio</a>
-        <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Limpieza</a>
-        <a href="renta-corta.html" class="is-active">Renta corta</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Limpieza<span class="sr-only"> (abre la agenda en una pestaña nueva)</span></a>
+        <a href="renta-corta.html" aria-current="page">Renta corta</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn--primary btn--sm nav__cta">Cotizar</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="banner" style="--img: url('assets/img/depto-living.jpg')">
-      <div class="container">
-        <h1>Rentabilice su departamento</h1>
-        <p>Nosotros lo administramos en renta corta. Usted recibe los ingresos.</p>
-        <a href="contacto.html" class="btn btn--light">Solicitar evaluación</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section__title">Nos encargamos de todo</h2>
-        <div class="icons">
-          <div class="icon-item">
-            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-8 8"/></svg>
-            <h3>Publicación</h3>
-            <p>Fotos y anuncio profesional</p>
-          </div>
-          <div class="icon-item">
-            <svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
-            <h3>Tarifas</h3>
-            <p>Precios según temporada</p>
-          </div>
-          <div class="icon-item">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-            <h3>Huéspedes</h3>
-            <p>Atención, check-in y check-out</p>
-          </div>
-          <div class="icon-item">
-            <svg viewBox="0 0 24 24"><path d="M5 21l1.5-9h11L19 21M4 21h16M9 12V8h6v4M12 8V3"/></svg>
-            <h3>Limpieza</h3>
-            <p>Después de cada estadía</p>
-          </div>
-          <div class="icon-item">
-            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
-            <h3>Mantención</h3>
-            <p>Insumos e inventario</p>
-          </div>
-          <div class="icon-item">
-            <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
-            <h3>Reportes</h3>
-            <p>Informe mensual de ingresos</p>
-          </div>
+  <main id="contenido">
+    <section class="banner">
+      <picture>
+        <source type="image/webp" srcset="assets/img/depto-living-800.webp 800w, assets/img/depto-living-1600.webp 1600w" sizes="100vw" />
+        <img class="banner__img" src="assets/img/depto-living.jpg" alt="" width="1200" height="800" fetchpriority="high" />
+      </picture>
+      <div class="container banner__content">
+        <p class="kicker kicker--light">Administración de renta corta</p>
+        <h1>Arriende su departamento por noche, sin ocuparse de la operación</h1>
+        <p>Gestionamos su departamento en Airbnb y otras plataformas: desde el anuncio hasta la limpieza después de cada huésped. Usted recibe un informe mensual con los resultados.</p>
+        <div class="btn-row">
+          <a href="contacto.html?servicio=renta-corta" class="btn btn--light">Solicitar evaluación</a>
+          <a href="#" data-link="whatsapp" data-wa-text="Hola FES, quiero información sobre la administración de mi departamento en renta corta." target="_blank" rel="noopener" class="btn btn--outline-light">Consultar por WhatsApp<span class="sr-only"> (pestaña nueva)</span></a>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section" aria-labelledby="t-servicio">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="t-servicio">Qué hacemos por usted</h2>
+          <p>Nos ocupamos del día a día de su departamento para que usted no tenga que coordinar huéspedes, llaves ni limpiezas.</p>
+        </div>
+        <ul class="icons">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-8 8"/></svg>
+            <h3>Anuncio</h3>
+            <p>Fotos, descripción y configuración del anuncio en las plataformas.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+            <h3>Tarifas y calendario</h3>
+            <p>Precios ajustados según temporada y demanda, y calendario al día.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+            <h3>Huéspedes</h3>
+            <p>Respuesta a consultas, reservas, llegada y salida de cada huésped.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21l1.5-9h11L19 21M4 21h16M9 12V8h6v4M12 8V3"/></svg>
+            <h3>Limpieza y ropa de cama</h3>
+            <p>Limpieza profesional y cambio de ropa de cama después de cada estadía.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+            <h3>Mantención</h3>
+            <p>Reposición de insumos, control de inventario y coordinación de arreglos.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+            <h3>Informe mensual</h3>
+            <p>Reservas, ingresos y gastos del mes, en un documento claro.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="t-proceso">
       <div class="container split">
-        <img class="split__img" src="assets/img/depto-plantas.jpg" alt="Departamento administrado por FES" />
+        <picture>
+          <source type="image/webp" srcset="assets/img/depto-plantas-800.webp 800w, assets/img/depto-plantas-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 540px" />
+          <img class="split__img" src="assets/img/depto-plantas.jpg" alt="Living de un departamento amoblado, luminoso y con plantas" width="1200" height="893" loading="lazy" />
+        </picture>
         <div>
-          <h2 class="section__title section__title--left">Cómo funciona</h2>
+          <h2 id="t-proceso">Cómo empezamos</h2>
           <ol class="steps">
-            <li><span>1</span><div><h3>Evaluación</h3><p>Visitamos su propiedad y estimamos su potencial.</p></div></li>
-            <li><span>2</span><div><h3>Contrato</h3><p>Acordamos condiciones por escrito.</p></div></li>
-            <li><span>3</span><div><h3>Publicación</h3><p>Preparamos y publicamos su departamento.</p></div></li>
-            <li><span>4</span><div><h3>Ingresos</h3><p>Recibe su reporte y pago cada mes.</p></div></li>
+            <li><span aria-hidden="true">1</span><div><h3>Conversación inicial</h3><p>Nos cuenta dónde está su departamento y cómo está equipado.</p></div></li>
+            <li><span aria-hidden="true">2</span><div><h3>Visita y evaluación</h3><p>Revisamos la propiedad y le indicamos qué se necesita para arrendarla por noche.</p></div></li>
+            <li><span aria-hidden="true">3</span><div><h3>Propuesta por escrito</h3><p>Le enviamos las condiciones del servicio. Usted decide sin compromiso.</p></div></li>
+            <li><span aria-hidden="true">4</span><div><h3>Publicación y operación</h3><p>Preparamos el departamento, lo publicamos y comenzamos a recibir huéspedes.</p></div></li>
           </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-recibe">
+      <div class="container split split--top">
+        <div>
+          <h2 id="t-recibe">Lo que usted recibe</h2>
+          <p class="body-lg">Queremos que siempre sepa cómo está funcionando su departamento.</p>
+        </div>
+        <ul class="deliverables">
+          <li><strong>Propuesta de administración</strong><span>Condiciones del servicio por escrito antes de comenzar.</span></li>
+          <li><strong>Anuncio publicado</strong><span>Su departamento visible en las plataformas acordadas.</span></li>
+          <li><strong>Informe mensual</strong><span>Detalle de reservas, ingresos y gastos del período.</span></li>
+          <li><strong>Un contacto directo</strong><span>Para consultas sobre su propiedad durante todo el servicio.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="t-faq">
+      <div class="container split split--top">
+        <h2 id="t-faq">Preguntas frecuentes</h2>
+        <div class="faq">
+          <details>
+            <summary>¿Dónde prestan el servicio?</summary>
+            <p>Estamos en Concepción, Región del Biobío. Cuéntenos dónde está su departamento y le confirmamos si podemos administrarlo.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto cobran?</summary>
+            <p>Depende de la propiedad y del servicio que necesite. Después de la evaluación le enviamos una propuesta por escrito con todas las condiciones, sin compromiso.</p>
+          </details>
+          <details>
+            <summary>¿Qué gastos corresponden al propietario?</summary>
+            <p>En la propuesta detallamos qué gastos asume el propietario y cuáles están incluidos en el servicio, para que no haya sorpresas.</p>
+          </details>
+          <details>
+            <summary>¿Mi departamento tiene que estar amoblado?</summary>
+            <p>No necesariamente. En la evaluación le indicamos qué equipamiento hace falta para recibir huéspedes.</p>
+          </details>
+          <details>
+            <summary>¿Cómo sabré cómo le va a mi departamento?</summary>
+            <p>Cada mes recibe un informe con las reservas, los ingresos y los gastos del período. Además, puede escribirnos cuando lo necesite.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <section class="cta">
       <div class="container cta__inner">
-        <h2>¿Tiene un departamento?</h2>
-        <a href="contacto.html" class="btn btn--primary">Conversemos</a>
+        <div>
+          <h2>¿Tiene un departamento en Concepción?</h2>
+          <p>Cuéntenos de su propiedad y coordinamos una evaluación.</p>
+        </div>
+        <a href="contacto.html?servicio=renta-corta" class="btn btn--light">Solicitar evaluación</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span data-year></span> FES · First Ecology Solutions</span>
-      <div class="footer__links">
-        <a href="mailto:contacto@fes.cl">contacto@fes.cl</a>
-        <a href="#" data-whatsapp-link>WhatsApp</a>
-        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <div class="footer__brand">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" loading="lazy" />
+        </picture>
+        <p>Limpieza profesional y administración de departamentos en renta corta.</p>
+      </div>
+      <nav aria-label="Servicios">
+        <h2>Servicios</h2>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="contacto.html?servicio=empresa">Cotización para empresas</a>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <a href="#" data-link="whatsapp" target="_blank" rel="noopener">WhatsApp <span data-text="whatsappLabel"></span></a>
+        <a href="#" data-link="email"><span data-text="email"></span></a>
+        <a href="#" data-link="instagram" target="_blank" rel="noopener">Instagram <span data-text="instagramLabel"></span></a>
+        <p data-show-if="location" data-text="location"></p>
       </div>
     </div>
+    <div class="container footer__bottom">© <span data-year></span> FES SpA · First Ecology Solutions</div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

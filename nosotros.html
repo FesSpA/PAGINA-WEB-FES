@@ -3,76 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nosotros · FES First Ecology Solutions</title>
-  <meta name="description" content="Conozca FES First Ecology Solutions: limpieza profesional y administración de propiedades." />
-  <link rel="icon" type="image/png" href="assets/logo-fes.png" />
+  <title>Quiénes somos | FES · First Ecology Solutions</title>
+  <meta name="description" content="FES SpA es una empresa de Concepción que ofrece limpieza profesional y administración de departamentos en renta corta. Conozca cómo trabajamos." />
+  <link rel="canonical" href="https://fes-web.renatocarrasco2007.workers.dev/nosotros" />
+  <meta name="theme-color" content="#123a26" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="FES · First Ecology Solutions" />
+  <meta property="og:title" content="Quiénes somos | FES · First Ecology Solutions" />
+  <meta property="og:description" content="Empresa de Concepción dedicada a la limpieza profesional y a la administración de departamentos en renta corta." />
+  <meta property="og:url" content="https://fes-web.renatocarrasco2007.workers.dev/nosotros" />
+  <meta property="og:image" content="https://fes-web.renatocarrasco2007.workers.dev/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="FES inicio">
-        <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" />
+      <a href="index.html" class="header__logo" aria-label="FES, ir al inicio">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" />
+        </picture>
       </a>
-      <nav class="nav" id="nav">
-        <a href="index.html">Inicio</a>
-        <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Limpieza</a>
-        <a href="renta-corta.html">Renta corta</a>
-        <a href="nosotros.html" class="is-active">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Limpieza<span class="sr-only"> (abre la agenda en una pestaña nueva)</span></a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="nosotros.html" aria-current="page">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn--primary btn--sm nav__cta">Cotizar</a>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main id="contenido">
     <section class="section">
       <div class="container split">
         <div>
           <p class="kicker">Nosotros</p>
-          <h1 class="page-title">First Ecology Solutions</h1>
-          <p class="body-lg">Somos una empresa dedicada a la limpieza profesional y a la administración de propiedades en renta corta. Trabajamos con procesos definidos, personal capacitado y productos de menor impacto ambiental.</p>
+          <h1 class="page-title">Una empresa de Concepción al servicio de sus espacios</h1>
+          <p class="body-lg">FES SpA, First Ecology Solutions, ofrece dos servicios: limpieza profesional para hogares, empresas y edificios, y administración de departamentos en renta corta para propietarios que no quieren ocuparse de la operación diaria.</p>
+          <div class="btn-row">
+            <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener" class="btn btn--primary">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
+            <a href="renta-corta.html" class="btn btn--secondary">Conocer renta corta</a>
+          </div>
         </div>
-        <img class="split__img" src="assets/img/limpieza.jpg" alt="Equipo FES trabajando" />
+        <picture>
+          <source type="image/webp" srcset="assets/img/limpieza-800.webp 800w, assets/img/limpieza-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 540px" />
+          <img class="split__img" src="assets/img/limpieza.jpg" alt="Persona con guantes y mascarilla limpiando una ventana" width="1200" height="800" fetchpriority="high" />
+        </picture>
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--alt" aria-labelledby="t-como">
       <div class="container">
-        <div class="values">
-          <div><h3>Confianza</h3><p>Personal capacitado y supervisado.</p></div>
-          <div><h3>Calidad</h3><p>Procedimientos definidos para cada servicio.</p></div>
-          <div><h3>Ecología</h3><p>Insumos responsables con el medio ambiente.</p></div>
-          <div><h3>Transparencia</h3><p>Valores claros y reportes periódicos.</p></div>
+        <div class="section__head">
+          <h2 id="t-como">Cómo trabajamos</h2>
+          <p>Reglas simples para que usted sepa qué esperar.</p>
         </div>
+        <ul class="values">
+          <li><h3>Reserva en línea</h3><p>Las limpiezas se agendan en nuestra agenda en línea de Tuu, eligiendo el servicio y la fecha antes de confirmar.</p></li>
+          <li><h3>Condiciones por escrito</h3><p>Para renta corta y servicios a empresas, enviamos una propuesta escrita antes de comenzar.</p></li>
+          <li><h3>Informes periódicos</h3><p>Los propietarios reciben cada mes el detalle de reservas, ingresos y gastos.</p></li>
+          <li><h3>Contacto directo</h3><p>Atendemos consultas por WhatsApp y correo en nuestro horario de atención.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-datos">
+      <div class="container split split--top">
+        <h2 id="t-datos">Datos de la empresa</h2>
+        <dl class="facts">
+          <div><dt>Razón social</dt><dd>FES SpA</dd></div>
+          <div data-show-if="location"><dt>Ubicación</dt><dd data-text="location"></dd></div>
+          <div data-show-if="hours"><dt>Horario de atención</dt><dd data-text="hours"></dd></div>
+          <div data-show-if="whatsapp"><dt>WhatsApp</dt><dd><a href="#" data-link="whatsapp" target="_blank" rel="noopener"><span data-text="whatsappLabel"></span><span class="sr-only"> (pestaña nueva)</span></a></dd></div>
+          <div data-show-if="email"><dt>Correo</dt><dd><a href="#" data-link="email"><span data-text="email"></span></a></dd></div>
+          <div data-show-if="instagram"><dt>Instagram</dt><dd><a href="#" data-link="instagram" target="_blank" rel="noopener"><span data-text="instagramLabel"></span><span class="sr-only"> (pestaña nueva)</span></a></dd></div>
+        </dl>
       </div>
     </section>
 
     <section class="cta">
       <div class="container cta__inner">
-        <h2>¿Necesita nuestros servicios?</h2>
-        <a href="contacto.html" class="btn btn--primary">Contáctenos</a>
+        <div>
+          <h2>¿Conversamos?</h2>
+          <p>Cuéntenos qué necesita y le respondemos en nuestro horario de atención.</p>
+        </div>
+        <a href="contacto.html" class="btn btn--light">Ir a contacto</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span data-year></span> FES · First Ecology Solutions</span>
-      <div class="footer__links">
-        <a href="mailto:contacto@fes.cl">contacto@fes.cl</a>
-        <a href="#" data-whatsapp-link>WhatsApp</a>
-        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <div class="footer__brand">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" loading="lazy" />
+        </picture>
+        <p>Limpieza profesional y administración de departamentos en renta corta.</p>
+      </div>
+      <nav aria-label="Servicios">
+        <h2>Servicios</h2>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="contacto.html?servicio=empresa">Cotización para empresas</a>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <a href="#" data-link="whatsapp" target="_blank" rel="noopener">WhatsApp <span data-text="whatsappLabel"></span></a>
+        <a href="#" data-link="email"><span data-text="email"></span></a>
+        <a href="#" data-link="instagram" target="_blank" rel="noopener">Instagram <span data-text="instagramLabel"></span></a>
+        <p data-show-if="location" data-text="location"></p>
       </div>
     </div>
+    <div class="container footer__bottom">© <span data-year></span> FES SpA · First Ecology Solutions</div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

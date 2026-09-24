@@ -3,75 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FES · First Ecology Solutions</title>
-  <meta name="description" content="FES First Ecology Solutions: limpieza profesional y administración de departamentos en renta corta." />
-  <link rel="icon" type="image/png" href="assets/logo-fes.png" />
+  <title>FES | Limpieza profesional y administración de renta corta en Concepción</title>
+  <meta name="description" content="Agende una limpieza profesional en línea o deje la administración de su departamento en renta corta en manos de FES. Concepción, Región del Biobío." />
+  <link rel="canonical" href="https://fes-web.renatocarrasco2007.workers.dev/" />
+  <meta name="theme-color" content="#123a26" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="FES · First Ecology Solutions" />
+  <meta property="og:title" content="FES | Limpieza profesional y administración de renta corta" />
+  <meta property="og:description" content="Agende una limpieza en línea o solicite la evaluación de su departamento para renta corta." />
+  <meta property="og:url" content="https://fes-web.renatocarrasco2007.workers.dev/" />
+  <meta property="og:image" content="https://fes-web.renatocarrasco2007.workers.dev/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" type="image/webp" href="assets/img/limpieza-800.webp" imagesrcset="assets/img/limpieza-800.webp 800w, assets/img/limpieza-1600.webp 1600w" imagesizes="(max-width: 800px) 100vw, 560px" />
 </head>
-<body class="page-home">
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="FES inicio">
-        <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" />
+      <a href="index.html" class="header__logo" aria-label="FES, ir al inicio">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" />
+        </picture>
       </a>
-      <nav class="nav" id="nav">
-        <a href="index.html" class="is-active">Inicio</a>
-        <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Limpieza</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Limpieza<span class="sr-only"> (abre la agenda en una pestaña nueva)</span></a>
         <a href="renta-corta.html">Renta corta</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn--primary btn--sm nav__cta">Cotizar</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <main class="home">
-    <div class="container">
-      <div class="home__intro">
-        <h1>Cuidamos sus espacios</h1>
-        <p>Elija el servicio que necesita.</p>
-      </div>
+  <main id="contenido">
+    <section class="home">
+      <div class="container">
+        <div class="home__intro">
+          <p class="kicker">FES · First Ecology Solutions</p>
+          <h1>Limpieza profesional y administración de departamentos</h1>
+          <p class="home__lead">¿Necesita una limpieza o quiere arrendar su departamento por noche sin ocuparse de la operación? Elija el servicio.</p>
+        </div>
 
-      <div class="choices">
-        <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener" class="choice">
-          <img src="assets/img/limpieza.jpg" alt="Profesional de FES limpiando una ventana" />
-          <div class="choice__body">
-            <img class="choice__logo" src="assets/logo-limpieza.png" alt="" />
-            <h2>Servicio de limpieza</h2>
-            <p>Departamentos · Airbnb · Oficinas · Edificios · Clínicas · Fin de obra</p>
-            <span class="choice__btn">Agendar limpieza</span>
-          </div>
-        </a>
+        <div class="choices">
+          <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener" class="choice">
+            <picture>
+              <source type="image/webp" srcset="assets/img/limpieza-800.webp 800w, assets/img/limpieza-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 560px" />
+              <img src="assets/img/limpieza.jpg" alt="" width="1200" height="800" fetchpriority="high" />
+            </picture>
+            <div class="choice__body">
+              <picture>
+                <source srcset="assets/logo-limpieza.webp" type="image/webp" />
+                <img class="choice__logo" src="assets/logo-limpieza.png" alt="" width="300" height="163" />
+              </picture>
+              <h2>Limpieza profesional</h2>
+              <p>Casas y departamentos, Airbnb, oficinas, edificios, clínicas y fin de obra. Revise los servicios disponibles y reserve en línea.</p>
+              <span class="choice__btn">Agendar limpieza <span aria-hidden="true">↗</span></span>
+              <span class="sr-only"> (abre la agenda de FES en Tuu, en una pestaña nueva)</span>
+            </div>
+          </a>
 
-        <a href="renta-corta.html" class="choice">
-          <img src="assets/img/renta-corta.jpg" alt="Departamento amoblado listo para huéspedes" />
-          <div class="choice__body">
-            <h2>Administración de renta corta</h2>
-            <p>Administramos su departamento en Airbnb y Booking</p>
-            <span class="choice__btn">Conocer el servicio</span>
+          <a href="renta-corta.html" class="choice">
+            <picture>
+              <source type="image/webp" srcset="assets/img/renta-corta-800.webp 800w, assets/img/renta-corta-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 560px" />
+              <img src="assets/img/renta-corta.jpg" alt="" width="1200" height="800" />
+            </picture>
+            <div class="choice__body">
+              <h2>Administración de renta corta</h2>
+              <p>Nos encargamos del anuncio, los huéspedes, la limpieza y la mantención de su departamento. Usted recibe un informe mensual.</p>
+              <span class="choice__btn">Ver cómo funciona <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="home__extra">
+          <div>
+            <h2>¿Empresa, edificio o centro de salud?</h2>
+            <p>Cotizamos servicios de limpieza periódicos según la frecuencia y el espacio.</p>
+            <a href="contacto.html?servicio=empresa" class="link-arrow">Solicitar cotización</a>
           </div>
-        </a>
+          <div data-show-if="whatsapp">
+            <h2>¿Prefiere conversarlo?</h2>
+            <p>Escríbanos por WhatsApp al <span data-text="whatsappLabel"></span>.</p>
+            <a href="#" data-link="whatsapp" target="_blank" rel="noopener" class="link-arrow">Abrir WhatsApp<span class="sr-only"> (pestaña nueva)</span></a>
+          </div>
+          <div data-show-if="location hours">
+            <h2>Dónde estamos</h2>
+            <p><span data-text="location"></span><br /><span data-text="hours"></span></p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span data-year></span> FES · First Ecology Solutions</span>
-      <div class="footer__links">
-        <a href="mailto:contacto@fes.cl">contacto@fes.cl</a>
-        <a href="#" data-whatsapp-link>WhatsApp</a>
-        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <div class="footer__brand">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" loading="lazy" />
+        </picture>
+        <p>Limpieza profesional y administración de departamentos en renta corta.</p>
+      </div>
+      <nav aria-label="Servicios">
+        <h2>Servicios</h2>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="contacto.html?servicio=empresa">Cotización para empresas</a>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <a href="#" data-link="whatsapp" target="_blank" rel="noopener">WhatsApp <span data-text="whatsappLabel"></span></a>
+        <a href="#" data-link="email"><span data-text="email"></span></a>
+        <a href="#" data-link="instagram" target="_blank" rel="noopener">Instagram <span data-text="instagramLabel"></span></a>
+        <p data-show-if="location" data-text="location"></p>
       </div>
     </div>
+    <div class="container footer__bottom">© <span data-year></span> FES SpA · First Ecology Solutions</div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

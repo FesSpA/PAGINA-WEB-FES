@@ -3,76 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto · FES First Ecology Solutions</title>
-  <meta name="description" content="Contacte a FES First Ecology Solutions para limpieza profesional o administración de su departamento en renta corta." />
-  <link rel="icon" type="image/png" href="assets/logo-fes.png" />
+  <title>Contacto y cotizaciones | FES · First Ecology Solutions</title>
+  <meta name="description" content="Escriba a FES por WhatsApp o correo para cotizar limpieza para su empresa o evaluar la administración de su departamento en renta corta." />
+  <link rel="canonical" href="https://fes-web.renatocarrasco2007.workers.dev/contacto" />
+  <meta name="theme-color" content="#123a26" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="FES · First Ecology Solutions" />
+  <meta property="og:title" content="Contacto y cotizaciones | FES" />
+  <meta property="og:description" content="Cotice limpieza para su empresa o solicite la evaluación de su departamento para renta corta." />
+  <meta property="og:url" content="https://fes-web.renatocarrasco2007.workers.dev/contacto" />
+  <meta property="og:image" content="https://fes-web.renatocarrasco2007.workers.dev/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="FES inicio">
-        <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" />
+      <a href="index.html" class="header__logo" aria-label="FES, ir al inicio">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" />
+        </picture>
       </a>
-      <nav class="nav" id="nav">
-        <a href="index.html">Inicio</a>
-        <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Limpieza</a>
-        <a href="renta-corta.html">Renta corta</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html" class="is-active">Contacto</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Limpieza<span class="sr-only"> (abre la agenda en una pestaña nueva)</span></a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" aria-current="page">Contacto</a>
+        <a href="contacto.html" class="btn btn--primary btn--sm nav__cta">Cotizar</a>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main id="contenido">
     <section class="section">
-      <div class="container split">
+      <div class="container split split--top">
         <div>
           <p class="kicker">Contacto</p>
-          <h1 class="page-title">Hablemos</h1>
-          <p class="body-lg">Escríbanos y le responderemos a la brevedad.</p>
-          <dl class="contact">
-            <dt>WhatsApp</dt><dd><a href="#" data-whatsapp-link>+56 9 0000 0000</a></dd>
-            <dt>Correo</dt><dd><a href="mailto:contacto@fes.cl">contacto@fes.cl</a></dd>
-            <dt>Instagram</dt><dd><a href="https://instagram.com/" target="_blank" rel="noopener">@fes</a></dd>
+          <h1 class="page-title">Cuéntenos qué necesita</h1>
+          <p class="body-lg">Cotizamos limpieza para empresas y edificios, y evaluamos departamentos para renta corta. Complete el formulario o escríbanos directamente.</p>
+
+          <div class="booking-note">
+            <h2>¿Busca una limpieza para su hogar?</h2>
+            <p>No necesita escribirnos: reserve directamente en nuestra agenda en línea.</p>
+            <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
+          </div>
+
+          <dl class="facts facts--compact">
+            <div data-show-if="whatsapp"><dt>WhatsApp</dt><dd><a href="#" data-link="whatsapp" target="_blank" rel="noopener"><span data-text="whatsappLabel"></span><span class="sr-only"> (pestaña nueva)</span></a></dd></div>
+            <div data-show-if="email"><dt>Correo</dt><dd><a href="#" data-link="email"><span data-text="email"></span></a></dd></div>
+            <div data-show-if="instagram"><dt>Instagram</dt><dd><a href="#" data-link="instagram" target="_blank" rel="noopener"><span data-text="instagramLabel"></span><span class="sr-only"> (pestaña nueva)</span></a></dd></div>
+            <div data-show-if="hours"><dt>Horario</dt><dd data-text="hours"></dd></div>
+            <div data-show-if="location"><dt>Ubicación</dt><dd data-text="location"></dd></div>
           </dl>
-          <p class="note">¿Busca limpieza? <a href="https://www.tuu.cl/fes" target="_blank" rel="noopener">Agende directamente aquí</a>.</p>
         </div>
-        <form class="form" id="contactForm">
-          <label>Nombre<input type="text" name="nombre" required /></label>
-          <label>Teléfono<input type="tel" name="telefono" required /></label>
-          <label>Servicio
-            <select name="servicio">
-              <option>Administración de renta corta</option>
-              <option>Limpieza</option>
-              <option>Cotización para empresa</option>
-            </select>
-          </label>
-          <label>Mensaje<textarea name="mensaje" rows="4"></textarea></label>
-          <button type="submit" class="btn btn--primary">Enviar por WhatsApp</button>
-        </form>
+
+        <div class="form-wrap">
+          <form class="form" id="contactForm" novalidate aria-labelledby="form-title">
+            <h2 id="form-title" class="form__title">Enviar una consulta</h2>
+            <p class="form__hint">Los campos marcados con <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> son obligatorios.</p>
+
+            <div class="field">
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="nombre-error" />
+              <p class="field__error" id="nombre-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+              <input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="+56 9 1234 5678" required aria-describedby="telefono-error" />
+              <p class="field__error" id="telefono-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="servicio">Servicio de interés <span aria-hidden="true">*</span></label>
+              <select id="servicio" name="servicio" required aria-describedby="servicio-error">
+                <option value="">Seleccione una opción</option>
+                <option value="renta-corta">Administración de departamento en renta corta</option>
+                <option value="empresa">Limpieza para empresa, edificio o centro de salud</option>
+                <option value="fin-de-obra">Limpieza de fin de obra</option>
+                <option value="limpieza">Otra consulta sobre limpieza</option>
+                <option value="otro">Otra consulta</option>
+              </select>
+              <p class="field__error" id="servicio-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="comuna">Comuna <span class="field__opt">(opcional)</span></label>
+              <input id="comuna" name="comuna" type="text" autocomplete="address-level2" />
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Mensaje <span class="field__opt">(opcional)</span></label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej.: departamento de 2 dormitorios en el centro, amoblado."></textarea>
+            </div>
+
+            <p class="form__channel" id="formChannel">Al continuar se abrirá WhatsApp con su consulta ya escrita. <strong>La consulta se envía cuando usted presiona «Enviar» en WhatsApp.</strong></p>
+            <button type="submit" class="btn btn--primary btn--block">Continuar en WhatsApp</button>
+          </form>
+
+          <div class="form-status" id="formStatus" role="status" tabindex="-1" hidden></div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span data-year></span> FES · First Ecology Solutions</span>
-      <div class="footer__links">
-        <a href="mailto:contacto@fes.cl">contacto@fes.cl</a>
-        <a href="#" data-whatsapp-link>WhatsApp</a>
-        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <div class="footer__brand">
+        <picture>
+          <source srcset="assets/logo-fes.webp" type="image/webp" />
+          <img src="assets/logo-fes.png" alt="FES First Ecology Solutions" width="400" height="192" loading="lazy" />
+        </picture>
+        <p>Limpieza profesional y administración de departamentos en renta corta.</p>
+      </div>
+      <nav aria-label="Servicios">
+        <h2>Servicios</h2>
+        <a href="https://www.tuu.cl/fes" data-link="booking" target="_blank" rel="noopener">Agendar limpieza<span class="sr-only"> (pestaña nueva)</span></a>
+        <a href="renta-corta.html">Renta corta</a>
+        <a href="contacto.html?servicio=empresa">Cotización para empresas</a>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <a href="#" data-link="whatsapp" target="_blank" rel="noopener">WhatsApp <span data-text="whatsappLabel"></span></a>
+        <a href="#" data-link="email"><span data-text="email"></span></a>
+        <a href="#" data-link="instagram" target="_blank" rel="noopener">Instagram <span data-text="instagramLabel"></span></a>
+        <p data-show-if="location" data-text="location"></p>
       </div>
     </div>
+    <div class="container footer__bottom">© <span data-year></span> FES SpA · First Ecology Solutions</div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
