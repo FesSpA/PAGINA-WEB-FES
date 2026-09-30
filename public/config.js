@@ -5,15 +5,15 @@
 // =====================================================================
 window.FES_CONFIG = {
   // Datos legales de la empresa (se muestran en el pie y en las páginas legales)
-  rut: "",            // Ej.: "77.123.456-7"
-  legalAddress: "",   // Domicilio legal, ej.: "Av. Ejemplo 123, oficina 45, Concepción"
+  rut: "78.379.073-4",
+  legalAddress: "Los Manios 3440",
 
   // Número de WhatsApp en formato internacional, solo dígitos (56 + 9 + número)
   whatsapp: "56991259019",
   // Cómo se muestra el número en pantalla
   whatsappLabel: "+56 9 9125 9019",
 
-  email: "contacto@fes.cl",
+  email: "fes.informaciones@gmail.com",
 
   instagramUrl: "https://www.instagram.com/fes.chile/",
   instagramLabel: "@fes.chile",
