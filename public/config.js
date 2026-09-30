@@ -6,7 +6,7 @@
 window.FES_CONFIG = {
   // Datos legales de la empresa (se muestran en el pie y en las páginas legales)
   rut: "78.379.073-4",
-  legalAddress: "Los Manios 3440",
+  legalAddress: "Los Manios 3440, Coronel, Región del Biobío",
 
   // Número de WhatsApp en formato internacional, solo dígitos (56 + 9 + número)
   whatsapp: "56991259019",
