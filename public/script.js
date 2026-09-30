@@ -50,9 +50,9 @@
     "@type": "LocalBusiness",
     name: "FES · First Ecology Solutions",
     legalName: "FES SpA",
-    url: "https://fes-web.renatocarrasco2007.workers.dev/",
-    logo: "https://fes-web.renatocarrasco2007.workers.dev/assets/icon-512.png",
-    image: "https://fes-web.renatocarrasco2007.workers.dev/assets/og-image.jpg",
+    url: "https://fesspa.cl/",
+    logo: "https://fesspa.cl/assets/icon-512.png",
+    image: "https://fesspa.cl/assets/og-image.jpg",
     description: "Limpieza profesional y administración de departamentos en renta corta.",
   };
   if (cfg.whatsapp) org.telephone = `+${cfg.whatsapp}`;

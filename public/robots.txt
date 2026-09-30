@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fes-web.renatocarrasco2007.workers.dev/sitemap.xml
+Sitemap: https://fesspa.cl/sitemap.xml
