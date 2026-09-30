@@ -4,6 +4,10 @@
 //  automáticamente en todas las páginas.
 // =====================================================================
 window.FES_CONFIG = {
+  // Datos legales de la empresa (se muestran en el pie y en las páginas legales)
+  rut: "",            // Ej.: "77.123.456-7"
+  legalAddress: "",   // Domicilio legal, ej.: "Av. Ejemplo 123, oficina 45, Concepción"
+
   // Número de WhatsApp en formato internacional, solo dígitos (56 + 9 + número)
   whatsapp: "56991259019",
   // Cómo se muestra el número en pantalla

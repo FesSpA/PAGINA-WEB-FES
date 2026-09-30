@@ -114,6 +114,7 @@
 
             <p class="form__channel" id="formChannel">Al continuar se abrirá WhatsApp con su consulta ya escrita. <strong>La consulta se envía cuando usted presiona «Enviar» en WhatsApp.</strong></p>
             <button type="submit" class="btn btn--primary btn--block">Continuar en WhatsApp</button>
+            <p class="form__legal">Usaremos sus datos solo para responder su consulta. Más información en nuestra <a href="/privacidad">Política de privacidad</a>.</p>
           </form>
 
           <div class="form-status" id="formStatus" role="status" tabindex="-1" hidden></div>
@@ -145,7 +146,13 @@
         <p data-show-if="location" data-text="location"></p>
       </div>
     </div>
-    <div class="container footer__bottom">© <span data-year></span> FES SpA · First Ecology Solutions</div>
+    <div class="container footer__bottom footer__legal">
+      <p>© <span data-year></span> FES SpA · First Ecology Solutions<span data-show-if="rut"> · RUT <span data-text="rut"></span></span></p>
+      <nav aria-label="Información legal">
+        <a href="/privacidad">Política de privacidad</a>
+        <a href="/terminos">Términos y condiciones</a>
+      </nav>
+    </div>
   </footer>
 
   <script src="/config.js"></script>

@@ -11,6 +11,8 @@
     location: Boolean(cfg.location),
     hours: Boolean(cfg.hours),
     booking: Boolean(cfg.bookingUrl),
+    rut: Boolean(cfg.rut),
+    legalAddress: Boolean(cfg.legalAddress),
   };
 
   // ---------- Datos de contacto desde config.js ----------
@@ -57,6 +59,7 @@
   };
   if (cfg.whatsapp) org.telephone = `+${cfg.whatsapp}`;
   if (cfg.email) org.email = cfg.email;
+  if (cfg.rut) org.taxID = cfg.rut;
   if (cfg.instagramUrl) org.sameAs = [cfg.instagramUrl];
   if (cfg.location)
     org.address = { "@type": "PostalAddress", addressLocality: "Concepción", addressRegion: "Biobío", addressCountry: "CL" };
